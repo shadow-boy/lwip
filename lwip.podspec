@@ -29,14 +29,21 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
+  s.module_name = "lwip"
 
-  s.source_files = 'lwip/Classes/**/*'
+  s.source_files = 'lwip/Classes/include/**/*'
   
   # s.resource_bundles = {
   #   'lwip' => ['lwip/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+#   s.frameworks = 'libc++'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+#  s.preserve_paths = 'lwip/Classes/include/module.modulemap'
+  s.public_header_files = 'lwip/Classes/include/*.h'
+  s.xcconfig = {"HEADER_SEARCH_PATHS" => '"${PODS_ROOT}/Headers/Public/lwip"'}
+
+  
 end

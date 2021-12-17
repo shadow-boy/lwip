@@ -1,0 +1,16 @@
+PODS:
+  - lwip (0.1.0)
+
+DEPENDENCIES:
+  - lwip (from `../`)
+
+EXTERNAL SOURCES:
+  lwip:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  lwip: 4fa49333c135a914287c569a63d145b9853c96c8
+
+PODFILE CHECKSUM: b57255800531cee773d67c66a387d387867f3314
+
+COCOAPODS: 1.11.2
