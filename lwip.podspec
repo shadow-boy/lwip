@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'lwip'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of lwip.'
 
 # This description is used to generate tags and improve search results.
@@ -31,19 +31,9 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
   s.module_name = "lwip"
 
-  s.source_files = 'lwip/Classes/include/**/*'
-  
-  # s.resource_bundles = {
-  #   'lwip' => ['lwip/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-#   s.frameworks = 'libc++'
-  # s.dependency 'AFNetworking', '~> 2.3'
-  
-#  s.preserve_paths = 'lwip/Classes/include/module.modulemap'
-  s.public_header_files = 'lwip/Classes/include/*.h'
-  s.xcconfig = {"HEADER_SEARCH_PATHS" => '"${PODS_ROOT}/Headers/Public/lwip"'}
+  s.vendored_frameworks = 'Frameworks/lwip.xcframework'
+
 
   
 end
