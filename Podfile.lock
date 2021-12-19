@@ -1,0 +1,23 @@
+PODS:
+  - lwip (0.2.0)
+  - OpenSSL-Universal (1.1.1200)
+
+DEPENDENCIES:
+  - lwip (from `./`)
+  - OpenSSL-Universal
+
+SPEC REPOS:
+  trunk:
+    - OpenSSL-Universal
+
+EXTERNAL SOURCES:
+  lwip:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  lwip: 56380c8eaf3eb1575abdd897d7caab58d9f3cf8f
+  OpenSSL-Universal: 3b8c0d6268fbd5d3ac44f97338e2fd16a73d9dbf
+
+PODFILE CHECKSUM: 81a3f4e4b5eed51ff653959fae9f00633846b799
+
+COCOAPODS: 1.11.2

@@ -1,4 +1,0 @@
-module lwip {
-       header "lwip.h"
-       export *
-}

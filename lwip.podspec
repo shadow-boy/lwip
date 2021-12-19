@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  nothing else
                        DESC
 
   s.homepage         = 'https://github.com/shadow-boy/lwip'
@@ -29,10 +29,15 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-  s.module_name = "lwip"
+  s.requires_arc = true
+  s.cocoapods_version = '>= 1.9'
+  # s.module_name = "lwip"
+
+  # s.resources = 'lwip/Classes/**/*'
+  # s.source_files = 'lwip/Classes/**/*'
 
 
-  s.vendored_frameworks = 'Frameworks/lwip.xcframework'
+  s.vendored_frameworks = 'lwip/Frameworks/lwip.xcframework'
 
 
   
