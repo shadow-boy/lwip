@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'lwip'
-  s.version          = '0.2.0'
+  s.version          = '1.0'
   s.summary          = 'A short description of lwip.'
 
 # This description is used to generate tags and improve search results.
@@ -36,6 +36,7 @@ Pod::Spec.new do |s|
   # s.resources = 'lwip/Classes/**/*'
   # s.source_files = 'lwip/Classes/**/*'
 
+  s.ios.vendored_frameworks = 'lwip/Frameworks/lwip.xcframework'
 
   s.vendored_frameworks = 'lwip/Frameworks/lwip.xcframework'
 
